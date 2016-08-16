@@ -226,12 +226,20 @@ print("Area is \(square4.area)")
 // Prints "Area is 94.09"
 ```
 
-One thing to note: If you declare a constant (using `let`), the properties of the object _cannot_ be changed, even if they are variables. For example, this code will produce an error, because `square5` is a constant, even though its properties are variables:
+One thing to note: If you declare a constant (using `let`), the properties of the object _can_ be changed, but only if those properties were declared as variables. For example, this code is valid:
 
 ```swift
 let square5 = Square(topLeftCorner: (10.0, 10.0), lengthOfSide: 6.0)
-square5.lengthOfSide = 4.0  // NO! An error occurs
+square5.lengthOfSide = 4.0 
 ```
+
+Declaring `square5` with the `let` keyword, thus making it a constant is only _immutable_ in the sense that we can't have `square5` equal another instance of Square, meaning the following vode is invalid:
+
+```swift
+square5 = Square(topLeftCorner: (99.0, 99.0), lengthOfSide: 15.0) // invalid code
+```
+
+Here trying to assign a new instance of Square to our `square5` constant which is not allowed, this code will generate an error. We can though change any instance properties on `square5` that are marked with the `var` keyword thus making them variables even though `square5` itself was marked as a constant.
 
 ## Setting Computed Properties
 
@@ -275,8 +283,6 @@ square6.area = 144.0
 print("Length of side is 12.0? \(square6.lengthOfSide)")
 // Prints "Length of side is 12.0? 12.0
 ```
-
-As before, if you want to change the value of a computed property, the object _must_ be a variable. If you had declared it as a constant, you would not be able to change `area`, _even though `area` is a variable computed property_.
 
 That's all the important stuff you need to know about properties. These are an integral part of Swift programming, so you'll be working with them a lot more in future lessons.
 
