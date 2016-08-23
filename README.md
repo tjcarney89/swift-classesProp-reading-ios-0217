@@ -4,17 +4,20 @@
 
 > People often say that motivation doesn't last. Well, neither does bathing--that's why we recommend it daily. -[Zig Ziglar](https://en.wikipedia.org/wiki/Zig_Ziglar)
 
+## Overview
+
+In this lesson we'll introdue properties, the attributes that separate an instance of a class from other instances. 
+
 ## Learning Objectives
 
-* Understand what properties are in Swift classes
-* Create your own stored properties
+* Create stored properties
 * Create computed properties that are based on the values of other properties
-* Understand the difference between constant and variable properties
-* Understand the difference between constant and variable objects
+* Explain the difference between constant and variable properties
+* Explain the difference between constant and variable objects
 
 ## Properties
 
-Think about a car for a second. A car is a fairly generic object: It's a thing you drive that has four wheels, a body, an engine, and some seats. (It has a lot of other stuff, too, like a transmission and brakes and stuff, but let's not get too hung up on details.) What, then, differentiates one car for another? When you're looking for your car in a parking lot, how can you pick out your car from the dozens or hundreds of others parked there, too?
+Think about a car for a second. A car is a fairly generic object: it's a thing you drive that has four wheels, a body, an engine, and some seats. (It has a lot of other stuff, too, like a transmission and brakes and stuff, but let's not get too hung up on details.) What, then, differentiates one car for another? When you're looking for your car in a parking lot, how can you pick out your car from the dozens or hundreds of others parked there, too?
 
 Cars, like all things in real life, have certain attributes that let you tell the difference between them. Your car, for example, might be a green Toyota with four doors and a black interior. It also has other identifying items, like a license plate, that let you easily pick out _your_ car from another one. You wouldn't mistake a bright red two-door Lamborghini for your green Toyota!
 
