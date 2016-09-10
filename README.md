@@ -236,7 +236,7 @@ let square5 = Square(topLeftCorner: (10.0, 10.0), lengthOfSide: 6.0)
 square5.lengthOfSide = 4.0 
 ```
 
-Declaring `square5` with the `let` keyword, thus making it a constant is only _immutable_ in the sense that we can't have `square5` equal another instance of Square, meaning the following vode is invalid:
+Declaring `square5` with the `let` keyword, thus making it a constant is only _immutable_ in the sense that we can't have `square5` equal another instance of Square, meaning the following code is invalid:
 
 ```swift
 square5 = Square(topLeftCorner: (99.0, 99.0), lengthOfSide: 15.0) // invalid code
@@ -290,3 +290,5 @@ print("Length of side is 12.0? \(square6.lengthOfSide)")
 That's all the important stuff you need to know about properties. These are an integral part of Swift programming, so you'll be working with them a lot more in future lessons.
 
 <a href='https://learn.co/lessons/Classes-Prop' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-classesProp-reading'>Classes and Properties</a> on Learn.co and start learning to code for free.</p>
