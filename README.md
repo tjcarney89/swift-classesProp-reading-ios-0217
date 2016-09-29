@@ -274,7 +274,7 @@ class Square2 {
 
 Notice how the computed property is defined. As before, it opens with a set of curly brackets. However, this time, there are two keywords, `get` and `set`. These each have a set of curly braces as well. Inside `get`'s curly braces is the previous definition of `area`: `return lengthOfSide * lengthOfSide`. However, the code inside `set`'s curly braces is new: `lengthOfSide = sqrt(newValue)`.
 
-As you can guess, the code inside `get` is called when _reading_ the `area` property. The code inside `set` is called when _writing_, or assigning, the area property. It simply sets `lengthOfSide` to the square root of the new value (using the built-in `sqrt()` function). Notice that the value being assigned is not explicitly listed as a parameter; rather, the value is referred to as `newValue` inside the `set` code block.
+As you can guess, the code inside `get` is called when _reading_ the `area` property. The code inside `set` is called when _writing_, or assigning, the area property. It simply sets `lengthOfSide` to the square root of the new value (using the built-in `sqrt()` function). Notice that the value being assigned is not explicitly listed as a parameter; rather, the value is referred to as `newValue` inside the `set` code block. `newValue` is provided automatically by Swift for use in the setter, and is how you access the value passed into a setter, while calling the variable's name from the setter method would actually retrieve the previous value of that variable.
 
 You can verify that this new computed property works as expected:
 
